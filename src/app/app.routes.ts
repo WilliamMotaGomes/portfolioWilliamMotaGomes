@@ -1,4 +1,6 @@
-import { Routes } from '@angular/router';
+import { inject } from '@angular/core';
+import { ActivatedRouteSnapshot, Routes } from '@angular/router';
+import { PortfolioService } from './core/services/portfolio.service';
 
 export const routes: Routes = [
   {
@@ -23,6 +25,9 @@ export const routes: Routes = [
   },
   {
     path: 'competences/:slug',
+    title: (route: ActivatedRouteSnapshot) =>
+      inject(PortfolioService).competenceBySlug(route.paramMap.get('slug')!)?.nom
+        ?? 'Compétence introuvable',
     loadComponent: () =>
       import('./features/competences/competence-detail/competence-detail.component')
         .then(m => m.CompetenceDetailComponent),
@@ -36,6 +41,9 @@ export const routes: Routes = [
   },
   {
     path: 'realisations/:slug',
+    title: (route: ActivatedRouteSnapshot) =>
+      inject(PortfolioService).realisationBySlug(route.paramMap.get('slug')!)?.nom
+        ?? 'Réalisation introuvable',
     loadComponent: () =>
       import('./features/realisations/realisation-detail/realisation-detail.component')
         .then(m => m.RealisationDetailComponent),
