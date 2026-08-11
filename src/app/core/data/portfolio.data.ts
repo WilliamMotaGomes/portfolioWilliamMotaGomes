@@ -154,7 +154,7 @@ export const COMPETENCES: Competence[] = [
     nom: 'SQL & gestion de données',
     domaine: 'technique',
     niveau: 65,
-    definition: 'Interroger, analyser et transformer des données en environnement d\'entreprise via SQL, Python et plateformes cloud (Azure Data Platform, DataBricks). Dans le secteur financier, la fiabilité des données est non négociable : un rapport de conformité erroné peut engager la responsabilité de l\'entreprise, ce qui impose une rigueur particulière à chaque requête écrite.',
+    definition: 'Interroger, analyser et transformer des données en environnement d\'entreprise via SQL, Python et plateformes cloud (Azure Data Platform, Databricks). Dans le secteur financier, la fiabilité des données est non négociable : un rapport de conformité erroné peut engager la responsabilité de l\'entreprise, ce qui impose une rigueur particulière à chaque requête écrite.',
     preuves: [
       {
         recit: 'Chez AXA IM, rédaction de requêtes SQL complexes pour alimenter des rapports de conformité et les pages de contrôle de l\'application web, en veillant à la cohérence des jointures sur des volumes de données conséquents.',
@@ -173,7 +173,7 @@ export const COMPETENCES: Competence[] = [
       recul: 'Toujours valider la cohérence des résultats obtenus avant de les transmettre à l\'équipe métier, plutôt que de faire confiance aveuglément à une requête qui s\'exécute sans erreur.',
     },
     evolution: {
-      niveauVise: 'Maîtriser les pipelines de données sur Azure Data Platform et approfondir DataBricks, pour passer de requêtes ponctuelles à des traitements de données industrialisés.',
+      niveauVise: 'Maîtriser les pipelines de données sur Azure Data Platform et approfondir Databricks, pour passer de requêtes ponctuelles à des traitements de données industrialisés.',
       formations: [],
     },
     realisationIds: [],
@@ -392,7 +392,7 @@ export const REALISATIONS: Realisation[] = [
     slug: 'automatisation-donnees',
     nom: 'Automatisation des flux de données et rapports',
     descriptifCourt: 'Pipeline d\'automatisation pour la génération de rapports récurrents et l\'analyse de données de conformité sur la plateforme Azure.',
-    technologies: ['Azure Functions', 'Python', 'DataBricks', 'SQL Server', 'Azure Data Platform'],
+    technologies: ['Azure Functions', 'Python', 'Databricks', 'SQL Server', 'Azure Data Platform'],
     liens: [],
     presentation: 'Développement d\'un pipeline d\'automatisation éliminant les tâches manuelles récurrentes de l\'équipe compliance : génération de rapports, récupération de données et analyse d\'incidents via SQL et Python sur Azure, en remplacement de traitements auparavant réalisés à la main chaque semaine.',
     cadre: {
@@ -404,7 +404,7 @@ export const REALISATIONS: Realisation[] = [
     etapes: [
       'Analyse des tâches manuelles récurrentes et identification des candidats à l\'automatisation avec l\'équipe compliance.',
       'Développement de fonctions Azure pour la génération automatique des rapports.',
-      'Rédaction de scripts Python sur Azure Data Platform (DataBricks) pour le traitement des données.',
+      'Rédaction de scripts Python sur Azure Data Platform (Databricks) pour le traitement des données.',
       'Mise en place de requêtes SQL pour l\'alimentation des rapports et l\'analyse d\'incidents.',
       'Tests de bout en bout et mise en production avec suivi des premières exécutions.',
     ],
@@ -531,9 +531,9 @@ export const EXPERIENCES: Experience[] = [
     type: 'formation',
     debut: '2019-09',
     fin: '2023-06',
-    titre: 'Master Lead Concepteur et Développeur de Jeux Vidéos',
+    titre: 'Master Lead Concepteur et Développeur de Jeux Vidéo',
     etablissement: 'ISART Digital',
-    presentation: 'Formation en 5 ans couvrant le développement de jeux vidéos, la conception de gameplay, la programmation C++ et C#, et le travail en équipe pluridisciplinaire.',
+    presentation: 'Formation en 5 ans couvrant le développement de jeux vidéo, la conception de gameplay, la programmation C++ et C#, et le travail en équipe pluridisciplinaire.',
   },
   {
     id: 'form-bac',
