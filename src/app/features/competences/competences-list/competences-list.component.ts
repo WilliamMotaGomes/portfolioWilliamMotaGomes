@@ -10,6 +10,38 @@ import { PortfolioService } from '../../../core/services/portfolio.service';
     <p class="eyebrow">savoir-faire</p>
     <h1>Mes compétences</h1>
 
+    <section class="comp-schema" aria-labelledby="schema-titre">
+      <p class="eyebrow">vue d'ensemble</p>
+      <h2 id="schema-titre">Schéma comparatif</h2>
+      <p class="schema-intro">Niveau de maîtrise auto-évalué (0-100) pour chacune des 10 compétences, techniques et humaines.</p>
+      <div class="schema-grille">
+        <div class="schema-colonne">
+          <h3>Techniques</h3>
+          @for (c of p.competencesParDomaine('technique'); track c.id) {
+            <a class="meter-row" [routerLink]="['/competences', c.slug]">
+              <span class="meter-label">{{ c.nom }}</span>
+              <span class="meter-track">
+                <span class="meter-fill" [style.width.%]="c.niveau"></span>
+              </span>
+              <span class="meter-valeur">{{ c.niveau }}</span>
+            </a>
+          }
+        </div>
+        <div class="schema-colonne">
+          <h3>Humaines</h3>
+          @for (c of p.competencesParDomaine('humaine'); track c.id) {
+            <a class="meter-row" [routerLink]="['/competences', c.slug]">
+              <span class="meter-label">{{ c.nom }}</span>
+              <span class="meter-track">
+                <span class="meter-fill" [style.width.%]="c.niveau"></span>
+              </span>
+              <span class="meter-valeur">{{ c.niveau }}</span>
+            </a>
+          }
+        </div>
+      </div>
+    </section>
+
     <section class="comp-section">
       <h2>Techniques</h2>
       <div class="comp-grille">

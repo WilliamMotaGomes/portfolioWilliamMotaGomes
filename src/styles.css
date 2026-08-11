@@ -152,7 +152,25 @@ a.chip:hover { color: var(--text); border-color: var(--accent); }
 .portrait::after { content: ''; position: absolute; inset: -18% -12% auto auto; width: 60%; aspect-ratio: 1; background: var(--grad); filter: blur(60px); opacity: .35; z-index: -1; border-radius: 50%; }
 .portrait img { width: min(320px, 70vw); aspect-ratio: 4/5; object-fit: cover; border-radius: var(--radius); border: 1px solid var(--line); }
 
-/* =============== COMPÉTENCES (schéma comparatif) =============== */
+/* =============== COMPÉTENCES — schéma comparatif (barres) =============== */
+.comp-schema { margin: 2rem 0 3rem; }
+.schema-intro { color: var(--muted); font-size: .92rem; max-width: 52ch; }
+.schema-grille { display: grid; grid-template-columns: 1fr 1fr; gap: 0 3rem; margin-top: 1.2rem; }
+.schema-colonne h3 {
+  font-family: var(--f-mono); font-size: .78rem; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--muted); margin-bottom: .7rem;
+}
+.meter-row {
+  display: grid; grid-template-columns: 9.5rem 1fr 2.2rem; align-items: center; gap: .8rem;
+  padding: .38rem 0;
+}
+.meter-label { font-size: .86rem; color: var(--muted); transition: color .15s; }
+.meter-row:hover .meter-label { color: var(--text); }
+.meter-track { height: 8px; border-radius: 999px; background: var(--surface-2); overflow: clip; }
+.meter-fill { display: block; height: 100%; border-radius: 999px; background: var(--grad); }
+.meter-valeur { font-family: var(--f-mono); font-size: .76rem; color: var(--faint); text-align: right; }
+
+/* =============== COMPÉTENCES (liste détaillée) =============== */
 .comp-section { margin-top: 2.5rem; }
 .comp-section h2 { margin-bottom: 1rem; }
 
@@ -236,6 +254,6 @@ main > * { animation: fadeUp .45s ease both; }
   }
   .site-header nav.ouvert { display: flex; }
   .site-header nav a { padding: .7rem; border-radius: 8px; }
-  .barre { grid-template-columns: 1fr; gap: .3rem; }
-  .barre .valeur { text-align: left; }
+  .schema-grille { grid-template-columns: 1fr; gap: 1.6rem; }
+  .meter-row { grid-template-columns: 6.5rem 1fr 2rem; gap: .5rem; }
 }
