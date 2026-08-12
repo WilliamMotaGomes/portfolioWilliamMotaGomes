@@ -10,6 +10,9 @@ import { PortfolioService } from '../../../core/services/portfolio.service';
     @if (realisation(); as r) {
       <p class="eyebrow">réalisation</p>
       <h1>{{ r.nom }}</h1>
+      @if (r.imageUrl) {
+        <img class="hero-img" [src]="r.imageUrl" [alt]="r.nom" />
+      }
 
       <article>
         <section><h2>Présentation</h2><p>{{ r.presentation }}</p></section>

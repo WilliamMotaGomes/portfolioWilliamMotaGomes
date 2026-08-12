@@ -12,6 +12,9 @@ import { PortfolioService } from '../../../core/services/portfolio.service';
     <div class="grille">
       @for (r of p.realisations; track r.id) {
         <a class="card pave" [routerLink]="['/realisations', r.slug]">
+          @if (r.imageUrl) {
+            <img [src]="r.imageUrl" [alt]="r.nom" />
+          }
           <div class="pave-body">
             <h2>{{ r.nom }}</h2>
             <p>{{ r.descriptifCourt }}</p>
