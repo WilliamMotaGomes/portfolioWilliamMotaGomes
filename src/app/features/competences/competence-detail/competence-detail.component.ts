@@ -8,6 +8,7 @@ import { PortfolioService } from '../../../core/services/portfolio.service';
   imports: [RouterLink],
   template: `
     @if (competence(); as c) {
+      <a routerLink="/competences" class="lien-retour">← Toutes les compétences</a>
       <p class="eyebrow">compétence · {{ c.domaine }}</p>
       <h1>{{ c.nom }}</h1>
 

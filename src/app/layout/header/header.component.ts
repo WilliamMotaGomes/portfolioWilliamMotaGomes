@@ -22,8 +22,29 @@ import { PortfolioService } from '../../core/services/portfolio.service';
 
       <nav [class.ouvert]="ouvert()" (click)="ouvert.set(false)">
         <a routerLink="/presentation" routerLinkActive="actif">Présentation</a>
-        <a routerLink="/competences" routerLinkActive="actif">Compétences</a>
-        <a routerLink="/realisations" routerLinkActive="actif">Réalisations</a>
+
+        <div class="nav-item">
+          <a routerLink="/competences" routerLinkActive="actif">Compétences</a>
+          <div class="dropdown">
+            @for (c of p.competencesParDomaine('technique'); track c.id) {
+              <a class="dropdown-link" [routerLink]="['/competences', c.slug]">{{ c.nom }}</a>
+            }
+            <span class="dropdown-sep"></span>
+            @for (c of p.competencesParDomaine('humaine'); track c.id) {
+              <a class="dropdown-link" [routerLink]="['/competences', c.slug]">{{ c.nom }}</a>
+            }
+          </div>
+        </div>
+
+        <div class="nav-item">
+          <a routerLink="/realisations" routerLinkActive="actif">Réalisations</a>
+          <div class="dropdown">
+            @for (r of p.realisations; track r.id) {
+              <a class="dropdown-link" [routerLink]="['/realisations', r.slug]">{{ r.nom }}</a>
+            }
+          </div>
+        </div>
+
         <a routerLink="/parcours" routerLinkActive="actif">Parcours</a>
         <a routerLink="/contact" routerLinkActive="actif">Contact</a>
       </nav>
