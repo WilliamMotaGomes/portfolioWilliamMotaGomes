@@ -13,7 +13,7 @@ import { PortfolioService } from '../../core/services/portfolio.service';
     <ol class="frise">
       @for (e of experiences; track e.id) {
         <li class="evenement" [attr.data-type]="e.type">
-          <time>{{ e.debut }}@if (e.fin) { – {{ e.fin }} } @else { – aujourd’hui }</time>
+          <time>{{ e.debut }}@if (e.fin) { – {{ e.fin }} } @else if (e.type === 'entreprise') { – aujourd’hui }</time>
 
           @switch (e.type) {
             @case ('entreprise') {

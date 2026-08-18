@@ -477,15 +477,28 @@ export const REALISATIONS: Realisation[] = [
 
 export const EXPERIENCES: Experience[] = [
   {
+    id: 'exp-bnp',
+    type: 'entreprise',
+    debut: '2026-01',
+    fin: '2026-11',
+    poste: 'Développeur full-stack .Net / Angular',
+    societe: 'BNP Paribas Asset Management',
+    statut: 'Alternant',
+    missions: 'Développement frontend et backend de l\'application interne de conformité et de transactions non réglementaires (Angular / .Net). Migration d\'API, création d\'endpoints et rédaction d\'User Stories en méthodologie Agile. Mise en place de tests E2E avec Playwright pour couvrir les parcours critiques de l\'application.',
+    realisationIds: ['supervision-transactions'],
+    competenceIds: ['fullstack', 'archi-logicielle', 'communication', 'travail-equipe'],
+  },
+  {
     id: 'exp-axa',
     type: 'entreprise',
     debut: '2024-10',
+    fin: '2025-12',
     poste: 'Développeur full-stack .Net / Angular',
     societe: 'AXA Investment Managers',
     statut: 'Alternant',
-    missions: 'Développement frontend et backend d\'applications internes pour l\'équipe de conformité et de transactions non réglementaires. Rédaction de requêtes SQL et développement Python sur Azure Data Platform. Automatisation de tâches via Azure Functions et tests E2E avec Playwright. Migration d\'API, création d\'endpoints et rédaction d\'User Stories en méthodologie Agile. Analyse de bases de données lors d\'incidents pour identifier et corriger les comportements anormaux.',
-    realisationIds: ['supervision-transactions', 'automatisation-donnees'],
-    competenceIds: ['fullstack', 'archi-logicielle', 'analyse-conception', 'automatisation-tests', 'sql-donnees', 'communication', 'travail-equipe'],
+    missions: 'Rédaction de requêtes SQL et développement Python sur Azure Data Platform pour l\'équipe de conformité. Automatisation de tâches via Azure Functions (génération et récupération de rapports récurrents). Analyse de bases de données lors d\'incidents pour identifier et corriger les comportements anormaux.',
+    realisationIds: ['automatisation-donnees'],
+    competenceIds: ['analyse-conception', 'automatisation-tests', 'sql-donnees', 'apprentissage-autonomie'],
   },
   {
     id: 'exp-furious',
@@ -549,7 +562,7 @@ export const EXPERIENCES: Experience[] = [
   {
     id: 'cert-toeic',
     type: 'certification',
-    debut: '2025-01',
+    debut: '2023-06',
     intitule: 'TOEIC — niveau C1',
   },
 ];
