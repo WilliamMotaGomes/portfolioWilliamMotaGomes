@@ -550,6 +550,7 @@ export const EXPERIENCES: Experience[] = [
     fin: '2023-06',
     titre: 'Master Lead Concepteur et Développeur de Jeux Vidéo',
     etablissement: 'ISART Digital',
+    urlEtablissement: 'https://www.isart.fr/',
     presentation: 'Formation en 5 ans couvrant le développement de jeux vidéo, la conception de gameplay, la programmation C++ et C#, et le travail en équipe pluridisciplinaire.',
   },
   {
