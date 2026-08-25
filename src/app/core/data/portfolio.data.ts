@@ -19,10 +19,11 @@ export const PERSONNE: Personne = {
 };
 
 export const PRESENTATION: PresentationGenerale = {
-  valeurs: 'La qualité avant la quantité, et la créativité au service de la technique. Ce qui m\'importe vraiment, c\'est de concevoir des choses qui tiennent dans le temps et qui ont du sens pour les gens qui s\'en servent. J\'aime apprendre, par curiosité autant que par nécessité.',
-  projet: 'Devenir un expert capable de couvrir toute la chaîne, du backend à l\'interface finale. L\'expérience en environnement bancaire m\'a confirmé que ce secteur m\'attire : la rigueur, les enjeux concrets, la complexité des systèmes. À terme, évoluer vers des rôles de conception et de lead technique dans ce milieu.',
-  qualitesHumaines: 'Assez adaptable pour avoir changé de secteur sans perdre mes marques. À l\'aise en équipe, habitué à travailler avec des profils très variés. Curieux de nature, ce qui se voit dans les langues apprises et les domaines touchés.',
-  centresInteret: 'La musculation et l\'escalade tiennent une bonne place dans mon quotidien, j\'aime la progression concrète que ces deux sports demandent. En dehors de ça, je joue aux jeux vidéo et je regarde des films et séries, souvent attiré par les univers bien construits et les directions artistiques soignées.',
+  valeurs: 'La qualité avant la quantité, et la créativité au service de la technique. Chez Furious Bounce par exemple, sur un jeu multijoueur, les bugs de synchronisation ont un impact immédiat et très visible pour les joueurs : sur ce type de feature, je préfère toujours prendre le temps de bien faire les choses plutôt que de livrer vite et mal. Ce qui m\'importe vraiment, c\'est de concevoir des choses qui tiennent dans le temps et qui ont du sens pour les gens qui s\'en servent. J\'aime apprendre, par curiosité autant que par nécessité.',
+  projet: 'Devenir un expert capable de couvrir toute la chaîne, du backend à l\'interface finale. À court terme, je vise un poste de développeur avec une dimension analyse plus marquée ; à plus long terme, évoluer vers un rôle de lead technique. L\'expérience en environnement bancaire m\'a confirmé que ce secteur m\'attire : la rigueur, les enjeux concrets, la complexité des systèmes.',
+  qualitesHumaines: 'Assez adaptable pour avoir changé de secteur sans perdre mes marques. À l\'aise en équipe, habitué à travailler avec des profils très variés. Curieux de nature : je parle français, anglais, espagnol et portugais (langue maternelle), ce qui se retrouve aussi dans la diversité des domaines que j\'ai touchés.',
+  centresInteret: 'La musculation et l\'escalade tiennent une bonne place dans mon quotidien : j\'aime la progression concrète que ces deux sports demandent, et ça me maintient en forme. En dehors de ça, je joue aux jeux vidéo et je regarde des films et séries, souvent attiré par les univers bien construits et les directions artistiques soignées.',
+  langues: ['Français', 'Anglais', 'Espagnol', 'Portugais'],
 };
 
 export const COMPETENCES: Competence[] = [

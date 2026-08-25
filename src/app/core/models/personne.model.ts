@@ -21,4 +21,5 @@ export interface PresentationGenerale {
   projet: string;
   qualitesHumaines: string;
   centresInteret: string;
+  langues?: string[];
 }
