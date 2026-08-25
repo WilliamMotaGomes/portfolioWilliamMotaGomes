@@ -394,7 +394,7 @@ export const REALISATIONS: Realisation[] = [
     acteurs: 'L\'équipe de développement (développeurs, lead technique) responsable de la conception et de l\'implémentation ; l\'équipe compliance (6 personnes) et l\'équipe transactions non réglementaires (5 personnes), utilisatrices finales et principales sources d\'expression du besoin ; le product owner, arbitrant les priorités entre les sprints.',
     resultats: 'Plusieurs pages de contrôle livrées et adoptées par les deux équipes métier, qui génèrent désormais entre 10 et 20 rapports par trimestre via l\'application. Migration API réalisée sans interruption de service. User Stories validées en sprint review sans retouche majeure dans la grande majorité des cas.',
     lendemains: 'Les fonctionnalités livrées sont utilisées quotidiennement par les deux équipes métier. La base de code est maintenue et fait l\'objet de nouvelles itérations continues, au rythme des besoins remontés par le terrain.',
-    regardCritique: 'La couverture de tests automatisés a montré ses limites face à un incident concret : un filtre reposant sur un champ renvoyé à `null` par une API interne a cessé de fonctionner du jour au lendemain lorsque cette API a changé de comportement sans préavis, renvoyant `0` au lieu de `null`. Le bug, invisible dans nos tests existants, a dû être repéré et corrigé en urgence pour la production. La communication avec les équipes propriétaires d\'API partagées mériterait d\'être mieux cadrée en amont pour anticiper ce type de rupture silencieuse.',
+    regardCritique: 'La couverture de tests automatisés a montré ses limites face à un incident concret : un filtre reposant sur un champ renvoyé à « null » par une API interne a cessé de fonctionner du jour au lendemain lorsque cette API a changé de comportement sans préavis, renvoyant « 0 » au lieu de « null ». Le bug, invisible dans nos tests existants, a dû être repéré et corrigé en urgence pour la production. La communication avec les équipes propriétaires d\'API partagées mériterait d\'être mieux cadrée en amont pour anticiper ce type de rupture silencieuse.',
     competenceIds: ['fullstack', 'archi-logicielle', 'communication', 'travail-equipe', 'automatisation-tests'],
   },
   {
@@ -414,7 +414,7 @@ export const REALISATIONS: Realisation[] = [
     },
     etapes: [
       'Analyse des tâches manuelles récurrentes et identification des candidats à l\'automatisation avec l\'équipe compliance.',
-      'Exemple type : remplacement d\'un template rempli à la main par les utilisateurs pour récupérer les positions de fonds en private equity (source d\'erreurs de saisie), par une fonction Azure se connectant chaque début de trimestre à une API interne pour récupérer automatiquement l\'équivalent d\'environ 2000 lignes de données.',
+      'Exemple type : remplacement d\'un template rempli à la main par les utilisateurs pour récupérer les positions de fonds en private equity (source d\'erreurs de saisie), par une fonction Azure se connectant chaque début de trimestre à une API interne pour récupérer automatiquement l\'équivalent d\'environ 2 000 lignes de données.',
       'Développement de 7 à 8 fonctions Azure au total pour la génération automatique des rapports.',
       'Rédaction de scripts Python sur Azure Data Platform (Databricks) pour le traitement des données.',
       'Mise en place de requêtes SQL pour l\'alimentation des rapports et l\'analyse d\'incidents.',
